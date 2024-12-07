@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Manager</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>File Manager</h1>
+            <p>Organize and manage your files efficiently</p>
+        </header>
+
+        <section class="file-actions">
+            <div class="create-folder">
+                <h3>Create a New Folder</h3>
+                <input type="text" id="folderName" placeholder="Enter folder name">
+                <button id="createFolderBtn">Create Folder</button>
+            </div>
+
+            <div class="upload-file">
+                <h3>Upload a File</h3>
+                <select id="folderSelect"></select>
+                <input type="file" id="fileInput">
+                <button id="uploadFileBtn">Upload File</button>
+            </div>
+        </section>
+
+        <section id="foldersSection">
+            <h3>Folders</h3>
+            <div id="foldersList" class="folder-list"></div>
+        </section>
+
+        <div id="message" class="message"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
